@@ -1,8 +1,6 @@
 package kr.co.iei;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class ResponsServlet
+ * Servlet implementation class SendData1Servlet
  */
-@WebServlet("/response")
-public class ResponsServlet extends HttpServlet {
+@WebServlet("/sendData1")
+public class SendData1Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ResponsServlet() {
+    public SendData1Servlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,23 +27,18 @@ public class ResponsServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		System.out.println("서버호출 222");
-		//클라이언트에게 응답할 문서의 타입지정 and 문자셋 지정
-		response.setContentType("text/html; charset=UTF-8");
-		//사용자가 볼HTML문서를 작성하는 객체 생성
-		PrintWriter out = response.getWriter();
-		//HTML 문서 작성
-		out.println("<!DOCTYPE html>");
-		out.println("<html>");
-		out.println("<head>");
-		out.println("<title>응답페이지</title>");
-		out.println("<h1>응답페이지</h1>");
-		out.println("</head>");
-		out.println("<body>");
-		out.println("<h2>서버에서 응답한 페이지입니다.</h2>");
-		out.println("<a href='/''>메인페이지로 돌아가기</a>");
-		out.println("</body>");
-		out.println("</html>");
+		System.out.println("서버호출완료333");
+		//사용자측에서 servlet으로 데이터를 보냄 -> 요청정보에 포함 -> request객체에서 꺼내야함
+		//한글이 있는경우 인코딩 수행
+		request.setCharacterEncoding("UTF-8");
+		//요청정보중에 전달된 데이터를 추출
+		// /sendData1?name=이병창&test=abc
+		request.getParameter("name"); // 파라미터 키값을 문자열로 넣어줘야함
+		String data1 = request.getParameter("name");
+		String data2 = request.getParameter("test");
+		System.out.println("data1 : " + data1);
+		System.out.println("data2 : " + data2);
+		
 	}
 
 	/**
