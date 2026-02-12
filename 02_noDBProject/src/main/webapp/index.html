@@ -77,5 +77,28 @@ div: <div name="div" value="div값">div태그</div>
 
 </form>	
 
+<form action="/plus" method="get">
+<input type="text" name="num1" placeholder="정수를 입력하세요">
++
+<input type="text" name="num2" placeholder="정수를 입력하세요">
+<input type="submit" value="더하기">
+</form>
+<br><br>
+
+
+<form action="/calc" method="get">
+<input type="text" name="su1" placeholder="정수를 입력하세요">
+<select name="oper">
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="*">*</option>
+<option value="/">/</option>
+</select>
+<input type="text" name="su2" placeholder="정수를 입력하세요">
+<input type="submit" value="계산하기">
+
+</form>
+
+
 </body>
 </html>
