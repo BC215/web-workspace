@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/todo.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1>TODO LIST</h1>
+        </header>
+        <main>
+            <section class="input-box">
+                <input type="text" name="input">
+                <button id="add-btn">입력</button>
+
+            </section>
+
+            <section class="list-box">
+                <!--
+                <ul class="todo">
+                    <li class="todo-like">
+                        <span class="material-icons todo-like-icon">favorite_border</span>
+                        <span class="material-icons todo-like-icon-filled">favorite</span>
+                    </li>
+                    <li class="todo-text">강아지 산책 시키기</li>
+                    <li class="todo-check">
+                        <span class="material-icons">done</span>
+                        <span class="material-icons">delete</span>
+                    </li>
+                </ul>
+                <ul class="todo">
+                    <li class="todo-like">
+                        <span class="material-icons todo-like-icon">favorite_border</span>
+                        <span class="material-icons todo-like-icon-filled">favorite</span>
+                    </li>
+                    <li class="todo-text done-text">고양이 밥주기</li>
+                    <li class="todo-check">
+                        <span class="material-icons">done</span>
+                        <span class="material-icons">delete</span>
+                    </li>
+                </ul>
+                <ul class="todo">
+                    <li class="todo-like">
+                        <span class="material-icons todo-like-icon">favorite_border</span>
+                        <span class="material-icons todo-like-icon-filled">favorite</span>
+                    </li>
+                    <li class="todo-text">자바스크립트 복습하기</li>
+                    <li class="todo-check">
+                        <span class="material-icons">done</span>
+                        <span class="material-icons">delete</span>
+                    </li>
+                </ul>
+                -->
+            </section>
+        </main>
+    </div>
+    <script src="js/todo.js"></script>
+</body>
+</html>

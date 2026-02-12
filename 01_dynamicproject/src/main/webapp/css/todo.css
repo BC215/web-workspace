@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+:root {
+	--main1: rgba(2,65,97,1);
+	--main2: rgba(7,122,159,1);
+	--gray1: #000;
+	--gray2: #ccc;
+	--gray3: #fff;
+}
+
+header {
+	background-image: radial-gradient(circle 855px at -5.3% 49%, rgba(2,65,97,1) 0%, rgba(7,122,159,1) 100%);
+	padding: 20px;
+}
+
+header > h1 {
+	color: var(--gray3);
+}
+
+main{
+	width: 900px;
+	margin: 50px auto;
+}
+.input-box{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.input-box>input{
+flex-grow: 1;
+border : 1px solid var(--gray2);
+padding: 8px;
+}
+.input-box>button{
+width: 200px;
+padding: 7px 16px;
+border: none;
+background-color: var(--main1);
+color: var(--gray3);
+border-radius: 8px;
+cursor: pointer;
+}
+
+.list-box{
+    margin-top: 50px;
+}
+
+.todo{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border: 1px solid var(--gray2);
+    margin-bottom: 8px;
+}
+
+.todo-like{
+    flex: 0 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.todo-like .material-icons{
+    display: none;
+    font-size: 20px;
+    color: var(--main2);
+}
+
+.todo-like .material-icons:first-child{
+    display: inline-block;
+}
+
+.todo-like.liked .material-icons:first-child{
+    display: none;
+}
+
+.todo-like.liked .material-icons:last-child{
+    display: inline-block;
+}
+
+.todo-text{
+    flex: 1;
+    color: var(--gray1);
+    line-height: 1.2;
+}
+
+.todo-check{
+    flex: 0 0 auto;
+    display: flex;
+    gap: 8px;
+}
+
+.todo-check .material-icons{
+    cursor: pointer;
+    color: var(--main2);
+}
+
+
+.done-text{
+    text-decoration: line-through;
+    color: var(--gray2);
+}
+

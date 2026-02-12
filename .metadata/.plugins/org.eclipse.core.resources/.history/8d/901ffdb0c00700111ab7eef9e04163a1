@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>My First WebSite(이병창)</h2>
+<h3><a href="/request">1.서버호출하기(servlet 호출)</a></h3>
+<h3><a href="/request2">2.서버호출하고 응답받기</a></h3>
+
+</body>
+</html>
