@@ -10,5 +10,8 @@ select * from memo_tbl order by 1
 select * from memo_tbl where memo_no = #{memoNo}
 </select>
 
+<select id="searchWriter" resultType="m">
+    select * from memo_tbl where memo_writer = #{memoWriter}
+</select>
 
 </mapper>

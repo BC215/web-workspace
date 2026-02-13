@@ -29,4 +29,13 @@ public class MemoService {
 		session.close();
 		return m;
 	}
+	public List<Memo> searchWriter(String memoWriter) {
+	    SqlSession session = SqlSessionTemplate.getSqlSession();
+	    
+	  
+	    List<Memo> list = dao.searchWriter(session, memoWriter);	    
+	    session.close();	    
+
+	    return list;
+	}
 }

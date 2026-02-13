@@ -15,4 +15,8 @@ public class MemoDao {
         Memo m = session.selectOne("memo.selectOneMemo", memoNo);
         return m;
     }
+    public List<Memo> searchWriter(SqlSession session, String memoWriter) {
+		List<Memo> list = session.selectList("memo.searchWriter", memoWriter);
+		return  list;
+	}
 }
